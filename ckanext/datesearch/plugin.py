@@ -8,7 +8,7 @@ class DateSearchPlugin(plugins.SingletonPlugin):
 
     def update_config(self, config):
         toolkit.add_template_directory(config, 'templates')
-        toolkit.add_resource('assets', 'ckanext-datesearch')
+        toolkit.add_resource('assets', 'datesearch')
 
     def before_search(self, search_params):
         extras = search_params.get('extras')
